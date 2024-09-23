@@ -1,0 +1,73 @@
+:root{
+    --border-radius: 5px;
+}
+
+*, *:before, *:after
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.gui{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar-section{
+    --sidebar-color: violet;
+    --sidebar-width: 500px;
+    --sidebar-collapse-button-width: 32px;
+    --sidebar-collapse-speed: .5s;
+    --sidbar-button-rotation-speed: calc(var(--sidebar-collapse-speed));
+
+    background-color: var(--sidebar-color);
+    position: relative;
+    max-width: var(--sidebar-width);
+    height: 100%;
+    transition: transform var(--sidebar-collapse-speed) linear;
+
+    #sidebar-button{   
+        background-color: var(--sidebar-color);  
+        width: var(--sidebar-collapse-button-width);
+        aspect-ratio: 1;
+    
+        position: absolute;
+        right: calc(var(--sidebar-collapse-button-width) * -1);
+
+        border: none;
+        outline: none;
+        border-radius: 0 var(--border-radius) var(--border-radius) 0;
+        cursor: pointer;
+    
+    
+        & svg{
+            width: 1rem;
+            aspect-ratio: 1;
+            transition: transform var(--sidbar-button-rotation-speed) linear;
+        }
+    }
+
+    &.collapsed{
+        transform: translateX(calc(calc(var(--sidebar-width) - var(--sidebar-collapse-button-width) / 2 ) * -1));
+
+        & svg{
+            transform: rotateZ(180deg)
+        }
+    }
+}
+
