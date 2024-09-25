@@ -14,19 +14,13 @@ body
     overflow: hidden;
 }
 
-.webgl
+canvas
 {
-    position: fixed;
-    top: 0;
-    left: 0;
     outline: none;
+    cursor: pointer;
 }
 
-.gui{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
+
 
 .sidebar-section{
     --sidebar-color: violet;
@@ -36,8 +30,9 @@ body
     --sidbar-button-rotation-speed: calc(var(--sidebar-collapse-speed));
 
     background-color: var(--sidebar-color);
-    position: relative;
-    max-width: var(--sidebar-width);
+    position: absolute;
+    width: var(--sidebar-width);
+    min-width: var(--sidebar-collapse-button-width) / 2;
     height: 100%;
     transition: transform var(--sidebar-collapse-speed) linear;
 
