@@ -1,0 +1,17 @@
+@import '../_content/SoftFlare.Blazor/SoftFlare.Blazor.o7a2uhi7uc.bundle.scp.css';
+
+/* Fiddles/Layout/MainLayout.razor.rz.scp.css */
+html[data-theme="dark"] .main-layout[b-ihw3j2quo3] {
+    --sf-border-dark: solid 1px rgba(255, 255, 255, 0.28);
+}
+
+html[data-theme="light"] .main-layout[b-ihw3j2quo3] {
+    --sf-border-dark: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.main-layout[b-ihw3j2quo3] {
+    display: flex;
+}
+
+[b-ihw3j2quo3] 
+/* Fiddles/Pages/ColorPalette.razor.rz.scp.css */

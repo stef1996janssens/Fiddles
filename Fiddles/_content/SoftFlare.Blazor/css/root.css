@@ -1,4 +1,5 @@
 ﻿:root {
+    --sf-color-text-primary: white;
     --sf-color-main: #7160e8;
     --sf-color-main--hover: var(--sf-color-main--darker-10);
     --sf-color-main--lighter-10: color-mix(in srgb, var(--sf-color-main), white 10%);
