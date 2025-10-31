@@ -75,3 +75,53 @@
 code {
     color: #c02d76;
 }
+
+:root[data-theme="light"] {
+    --clr-primary: #ffffff;
+    --clr-secondary: #a0a0a0;
+    --clr-background: #f5f7fa;
+    --clr-surface: #e8edf2;
+    --clr-text-primary: #1a1a1a;
+    --clr-text-secondary: #4a4a4a;
+    --clr-highlight: #0077b6;
+    --background-gradient: linear-gradient(180deg, #f5f7fa 0%, #e8edf2 50%, #dee6ed 100%);
+}
+
+:root[data-theme="dark"] {
+    --clr-primary: #000000;
+    --clr-secondary: #808080;
+    --clr-background: #1f1f1f;
+    --clr-surface: #282a36;
+    --clr-text-primary: #ffffff;
+    --clr-text-secondary: #ffffff;
+    --clr-highlight: 5ccaf8;
+    --background-gradient: linear-gradient(180deg, #12151b 0%, #1a2433 50%, #1e2a3c 100%);
+}
+
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: Roboto, Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    background-image: var(--background-gradient);
+    color: var(--clr-text-primary);
+    overflow: hidden;
+}
+
+.sf-btn.theme-btn {
+    position: absolute;
+    z-index: 10;
+    border-radius: 10px;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.content {
+}
