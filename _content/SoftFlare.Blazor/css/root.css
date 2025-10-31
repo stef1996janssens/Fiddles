@@ -1,0 +1,53 @@
+﻿:root {
+    --sf-color-main: #7160e8;
+    --sf-color-main--hover: var(--sf-color-main--darker-10);
+    --sf-color-main--lighter-10: color-mix(in srgb, var(--sf-color-main), white 10%);
+    --sf-color-main--lighter-20: color-mix(in srgb, var(--sf-color-main), white 20%);
+    --sf-color-main--lighter-30: color-mix(in srgb, var(--sf-color-main), white 30%);
+    --sf-color-main--lighter-40: color-mix(in srgb, var(--sf-color-main), white 40%);
+    --sf-color-main--lighter-50: color-mix(in srgb, var(--sf-color-main), white 50%);
+    --sf-color-main--lighter-60: color-mix(in srgb, var(--sf-color-main), white 60%);
+    --sf-color-main--lighter-70: color-mix(in srgb, var(--sf-color-main), white 70%);
+    --sf-color-main--lighter-80: color-mix(in srgb, var(--sf-color-main), white 80%);
+    --sf-color-main--lighter-90: color-mix(in srgb, var(--sf-color-main), white 90%);
+    --sf-color-main--darker-10: color-mix(in srgb, var(--sf-color-main), black 10%);
+    --sf-color-main--darker-20: color-mix(in srgb, var(--sf-color-main), black 20%);
+    --sf-color-main--darker-30: color-mix(in srgb, var(--sf-color-main), black 30%);
+    --sf-color-main--darker-40: color-mix(in srgb, var(--sf-color-main), black 40%);
+    --sf-color-main--darker-50: color-mix(in srgb, var(--sf-color-main), black 50%);
+    --sf-color-main--darker-60: color-mix(in srgb, var(--sf-color-main), black 60%);
+    --sf-color-main--darker-70: color-mix(in srgb, var(--sf-color-main), black 70%);
+    --sf-color-main--darker-80: color-mix(in srgb, var(--sf-color-main), black 80%);
+    --sf-color-main--darker-90: color-mix(in srgb, var(--sf-color-main), black 90%);
+    --sf-color-dark: #1f1f1f;
+    --sf-color-dark--lighter-10: color-mix(in srgb, var(--sf-color-dark), white 10%);
+    --sf-color-dark--lighter-20: color-mix(in srgb, var(--sf-color-dark), white 20%);
+    --sf-color-dark--lighter-30: color-mix(in srgb, var(--sf-color-dark), white 30%);
+    --sf-color-dark--lighter-40: color-mix(in srgb, var(--sf-color-dark), white 40%);
+    --sf-color-dark--lighter-50: color-mix(in srgb, var(--sf-color-dark), white 50%);
+    --sf-color-dark--lighter-60: color-mix(in srgb, var(--sf-color-dark), white 60%);
+    --sf-color-dark--lighter-70: color-mix(in srgb, var(--sf-color-dark), white 70%);
+    --sf-color-dark--lighter-80: color-mix(in srgb, var(--sf-color-dark), white 80%);
+    --sf-color-dark--lighter-90: color-mix(in srgb, var(--sf-color-dark), white 90%);
+    --sf-color-dark--darker-10: color-mix(in srgb, var(--sf-color-dark), black 10%);
+    --sf-color-dark--darker-20: color-mix(in srgb, var(--sf-color-dark), black 20%);
+    --sf-color-dark--darker-30: color-mix(in srgb, var(--sf-color-dark), black 30%);
+    --sf-color-dark--darker-40: color-mix(in srgb, var(--sf-color-dark), black 40%);
+    --sf-color-dark--darker-50: color-mix(in srgb, var(--sf-color-dark), black 50%);
+    --sf-color-dark--darker-60: color-mix(in srgb, var(--sf-color-dark), black 60%);
+    --sf-color-dark--darker-70: color-mix(in srgb, var(--sf-color-dark), black 70%);
+    --sf-color-dark--darker-80: color-mix(in srgb, var(--sf-color-dark), black 80%);
+    --sf-color-dark--darker-90: color-mix(in srgb, var(--sf-color-dark), black 90%);
+    --sf-border-dark: solid 1px var(--sf-color-dark--lighter-10);
+    --sf-border-radius: 5px;
+}
+
+html {
+    interpolate-size: allow-keywords;
+}
+
+.flex{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}

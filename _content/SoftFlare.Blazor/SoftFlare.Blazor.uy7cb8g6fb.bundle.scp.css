@@ -1,0 +1,230 @@
+/* _content/SoftFlare.Blazor/Components/Button/SoftflareButton.razor.rz.scp.css */
+button[b-655t7hnyae] {
+    background: var(--sf-color-main);
+    border: solid 2px var(--sf-color-main--lighter-20);
+    border-radius: var(--sf-border-radius);
+    width: auto;
+    padding: .25rem .5rem;
+    white-space: nowrap;
+    display: flex;
+    gap: .5rem;
+    height: 40px;
+}
+
+    button:hover[b-655t7hnyae] {
+        background: var(--sf-color-main--hover);
+        border-color: var(--sf-color-main--darker-30);
+    }
+/* _content/SoftFlare.Blazor/Components/Icon/SoftflareMaterialIcon.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Layout/Page.razor.rz.scp.css */
+.page[b-smitl2fb5p] {
+    margin: 1rem;
+    height: 100dvh;
+
+    .header {
+               height: 60px;
+           }
+
+    .main[b-smitl2fb5p] {
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        padding: 1rem;
+        backdrop-filter: blur(5px);
+        height: calc(100% - 2rem);
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+/* _content/SoftFlare.Blazor/Components/Modal/SoftflareModal.razor.rz.scp.css */
+.sf-modal-backdrop[b-fq2u5dapmc] {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .75;
+    background-color: black;
+}
+
+.sf-modal[b-fq2u5dapmc] {
+    z-index: 999;
+    position: absolute;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: var(--sf-color-dark);
+    border: var(--sf-border-dark);
+    border-radius: var(--sf-border-radius);
+    border-top: solid 4px var(--sf-color-main);
+    display: flex;
+    flex-direction: column;
+}
+
+.sf-modal-header-wrapper[b-fq2u5dapmc] {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    border-top: solid 4px var(--sf-color-main);
+    border-bottom: var(--sf-border-dark);
+    min-height: 40px;
+    position: relative;
+}
+
+.sf-close-btn[b-fq2u5dapmc] {
+    position: absolute;
+    top: 20px;
+    right: 1rem;
+    transition: transform ease-in-out .3s;
+}
+
+    .sf-close-btn:hover[b-fq2u5dapmc] {
+        transform: rotateZ(90deg);
+
+    }
+
+.sf-modal-header[b-fq2u5dapmc] {
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.sf-modal-content[b-fq2u5dapmc]{
+    height: 100%;
+    padding: 1rem;
+}
+
+.sf-modal-footer[b-fq2u5dapmc] {
+    padding: 1rem;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+/* _content/SoftFlare.Blazor/Components/Navbar/SoftflareNavbar.razor.rz.scp.css */
+.sf-navbar[b-rngf38kaap] {
+    width: auto;
+    border-right: var(--sf-border-dark);
+    background: color-mix(in srgb, var(--clr-bg) 99%, white);
+    position: relative;
+    overflow: visible;
+    transition: width ease-in 2s;
+}
+
+.collapse-toggle[b-rngf38kaap] {
+    position: absolute;
+    z-index: 99;
+    left: 100%;
+    height: 150px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.collapse-toggle .shape[b-rngf38kaap] {
+    display: block;
+    width: 16px;
+    height: auto;
+}
+
+    .collapse-toggle .shape polygon[b-rngf38kaap] {
+        fill: var(--sf-color-main--lighter-10);
+    }
+
+
+    .collapse-toggle:hover polygon[b-rngf38kaap] {
+        fill: var(--sf-color-main--darker-20); /* or lighten/darken original */
+    }
+/* _content/SoftFlare.Blazor/Components/Navbar/SoftflareNavbarItem.razor.rz.scp.css */
+.sf-navbar-item[b-0g2pfktyfs]{
+    list-style: none;
+}
+
+    .sf-navbar-item[b-0g2pfktyfs]  .nav-link:hover, .sf-navbar-item[b-0g2pfktyfs]  .nav-link.active:hover {
+        background: var(--sf-color-main--darker-20);
+    }
+
+    .sf-navbar-item[b-0g2pfktyfs] .nav-link {
+        display: flex;
+        align-items: end;
+        gap: 10px;
+
+        min-width: 24px;
+        height: 100%;
+        padding: 10px;
+
+        text-decoration: none;
+        overflow:hidden;
+    }
+
+        .sf-navbar-item[b-0g2pfktyfs] .nav-link.active {
+            background: var(--sf-color-main);
+            box-shadow: inset 0 4px 6px rgba(0,0,0,0.4);
+        }
+
+.material-symbols[b-0g2pfktyfs]{
+    font-size: 30px;
+}
+/* _content/SoftFlare.Blazor/Components/Navbar/SoftflareNavbarItems.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Wizard/SoftflareWizard.razor.rz.scp.css */
+.sf-wizard-steps-container[b-7akf8klybx]{
+    justify-content: center;
+    margin: .5rem;
+    height: 100px;
+}
+
+.sf-wizard-steps-container .sf-wizard-step[b-7akf8klybx] {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+}
+
+    .sf-wizard-steps-container .sf-wizard-step .sf-wizard-step-icon[b-7akf8klybx] {
+        display: grid;
+        place-items: center;
+        padding: .5rem;
+        border-radius: 50%;
+        width: auto;
+        aspect-ratio: 1/1;
+        border: solid 4px var(--sf-color-dark--lighter-10);
+        cursor: pointer;
+        margin-bottom: .5rem;
+    }
+
+    .sf-wizard-steps-container .line[b-7akf8klybx] {
+        height: 100%;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .sf-wizard-steps-container .line hr[b-7akf8klybx]{
+        background: var(--sf-color-main);
+        height: 4px;
+        width: 100%;
+    }
+
+    .sf-wizard-steps-container .sf-wizard-step.active .sf-wizard-step-icon[b-7akf8klybx] {
+        border: solid 4px var(--sf-color-main--darker-10);
+        background: var(--sf-color-main);
+    }
+
+        .sf-wizard-steps-container .sf-wizard-step .sf-wizard-step-icon:hover[b-7akf8klybx] {
+            border: solid 4px var(--sf-color-main--darker-30);
+            background: var(--sf-color-main--hover);
+        }
+
+    .sf-wizard-steps-container .sf-wizard-step .sf-wizard-step-icon[b-7akf8klybx]  span {
+        font-size: 2rem !important;
+    }
+
+    .sf-wizard-steps-container .sf-wizard-step .sf-wizard-step-label[b-7akf8klybx] {
+        text-align: center;
+    }
+
+    .sf-wizard-footer-step-navigation-buttons[b-7akf8klybx] {
+        display: flex;
+        gap: 1rem;
+    }
+/* _content/SoftFlare.Blazor/Components/Wizard/SoftflareWizardStep.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Wizard/SoftflareWizardSteps.razor.rz.scp.css */
