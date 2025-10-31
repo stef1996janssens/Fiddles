@@ -1,0 +1,43 @@
+name: Build and Deploy Blazor WASM to GitHub Pages
+
+permissions:
+  contents: write      # allows pushing commits
+  pages: write         # allows GitHub Pages deployment
+  id-token: write
+
+on:
+  push:
+    branches:
+      - main  # Trigger when pushing to main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - uses: actions/checkout@v3
+
+      # Step 2: Setup .NET SDK
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'  # Change to your target .NET version
+
+      # Step 3: Restore dependencies
+      - name: Restore dependencies
+        run: dotnet restore
+
+      # Step 4: Build and publish the Blazor WASM app
+      - name: Build and publish
+        run: dotnet publish -c Release -o publish
+
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./publish/wwwroot
+          publish_branch: gh-pages
+          user_name: github-actions
+          user_email: github-actions@github.com
