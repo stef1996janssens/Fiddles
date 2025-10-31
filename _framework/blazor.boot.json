@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Fiddles",
   "resources": {
-    "hash": "sha256-J7OIV+oaJ7vc+s06OWIXrVLgW9q+KaXZXvnfgoYlZOU=",
+    "hash": "sha256-nt0TA8B1Z8k4A1aekfuBDDBM8ZJmUVR0665VyF6aJds=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-9Fzd5We95Rp03dEKIAbYjPDR3eWyLbmjMlYStvxyiok="
     },
@@ -48,7 +48,7 @@
       "System.Text.Json.wasm": "sha256-3vxvs3w8ZIuZJi6xX/+MPidekiuLF0fqJeIPO3T6xCM=",
       "System.Text.RegularExpressions.wasm": "sha256-tCTxwg2N3nkoTMDAtfc+X4iVUDF7K9iBuzpAhgC284E=",
       "System.Private.CoreLib.wasm": "sha256-RINVYHAdcVP0nc7rzlS1olAuJbLPlxmllbb/3w7UOaA=",
-      "Fiddles.wasm": "sha256-NogbPk+ooLyY5F6gFDGx/FCMoReWmBgtWea/lMx7OXU="
+      "Fiddles.wasm": "sha256-0O6GufWKWjYPfssNx8pNO1rlFrj8ZjmtSfSoYYV/msw="
     }
   },
   "cacheBootResources": true,
