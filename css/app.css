@@ -105,6 +105,7 @@ code {
 }
 
 html, body {
+    font-family: Roboto, Arial, sans-serif;
     height: 100%;
 }
 
