@@ -1,14 +1,14 @@
 name: Build and Deploy Blazor WASM to GitHub Pages
 
 permissions:
-  contents: write      # allows pushing commits
-  pages: write         # allows GitHub Pages deployment
+  contents: write
+  pages: write
   id-token: write
 
 on:
   push:
     branches:
-      - main  # Trigger when pushing to main
+      - main
 
 jobs:
   build-and-deploy:
@@ -20,21 +20,29 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '8.0.x'  # Change to your target .NET version
+          dotnet-version: '8.0.x'
 
+      # Authenticate for private SoftFlare.Blazor package
       - name: Setup NuGet for GitHub Packages
         run: |
-            dotnet nuget add source "https://nuget.pkg.github.com/stef1996janssens/index.json" \
-              --name github \
-              --username stef1996janssens \
-              --password ${{ secrets.TOKEN_NUGET }} \
-              --store-password-in-clear-text
+          dotnet nuget add source "https://nuget.pkg.github.com/stef1996janssens/index.json" \
+            -n github \
+            -u stef1996janssens \
+            -p ${{ secrets.TOKEN_NUGET }} \
+            --store-password-in-clear-text
 
       - name: Restore dependencies
         run: dotnet restore
 
       - name: Build and publish
-        run: dotnet publish -c Release -o publish
+        run: dotnet publish ./Fiddles/Fiddles.csproj -c Release -o publish
+
+      # # ✅ Move published app into a "Fiddles" subfolder so GH Pages serves it correctly
+      # - name: Prepare GitHub Pages folder
+      #   run: |
+      #     mkdir -p publish/wwwroot/Fiddles
+      #     mv publish/wwwroot/* publish/wwwroot/Fiddles/ || true
+      #     echo "<meta http-equiv='refresh' content='0; url=./Fiddles/'>" > publish/wwwroot/index.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

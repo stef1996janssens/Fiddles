@@ -1,10 +1,16 @@
 ﻿@inherits LayoutComponentBase
 
-<SoftflareNavbar Resizable="true">
-            <SoftflareNavbarItems>
-                <SoftflareNavbarItem Href="/" Icon="@MaterialIcon.Home" Name="Home"></SoftflareNavbarItem>
-                <SoftflareNavbarItem Href="/color-palette" Icon="@MaterialIcon.Palette" Name="Color palette"></SoftflareNavbarItem>
-            </SoftflareNavbarItems>
-</SoftflareNavbar>
+<SoftFlare.Blazor.Components.Button.SoftflareToggleThemeButton></SoftFlare.Blazor.Components.Button.SoftflareToggleThemeButton>
 
-@Body
+<div class="main-layout">
+    <SoftflareNavbar Resizable="true">
+        <SoftflareNavbarItems>
+            <SoftflareNavbarItem Href="" Icon="@MaterialIcon.Home" Name="Home"></SoftflareNavbarItem>
+            <SoftflareNavbarItem Href="color-palette" Icon="@MaterialIcon.Palette" Name="Color palette"></SoftflareNavbarItem>
+        </SoftflareNavbarItems>
+    </SoftflareNavbar>
+
+    <Page>
+        @Body
+    </Page>
+</div>
