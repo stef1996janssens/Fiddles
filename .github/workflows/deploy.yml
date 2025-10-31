@@ -15,24 +15,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Check out the repository
       - uses: actions/checkout@v3
 
-      # Step 2: Setup .NET SDK
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0.x'  # Change to your target .NET version
 
-      # Step 3: Restore dependencies
+      - name: Setup NuGet for GitHub Packages
+        run: |
+            dotnet nuget add source "https://nuget.pkg.github.com/stef1996janssens/index.json" \
+              --name github \
+              --username stef1996janssens \
+              --password ${{ secrets.TOKEN_NUGET }} \
+              --store-password-in-clear-text
+
       - name: Restore dependencies
         run: dotnet restore
 
-      # Step 4: Build and publish the Blazor WASM app
       - name: Build and publish
         run: dotnet publish -c Release -o publish
 
-      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
