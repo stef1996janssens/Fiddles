@@ -86,7 +86,7 @@ code {
     --clr-text-primary: #1a1a1a;
     --clr-text-secondary: #4a4a4a;
     --clr-highlight: #0077b6;
-    --background-gradient: linear-gradient(180deg, #f5f7fa 0%, #e8edf2 50%, #dee6ed 100%);
+    --background-gradient: linear-gradient(180deg, #e6e0ff 0%, #c9d4ff 50%, #b0d2ff 100%);
     /*Overwrite Softflare root css*/
 
     --sf-color-text-primary: var(--clr-text-primary);
