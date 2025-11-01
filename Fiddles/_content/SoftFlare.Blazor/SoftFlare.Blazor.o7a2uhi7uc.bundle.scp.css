@@ -1,4 +1,4 @@
-/* /Fiddles/_content/SoftFlare.Blazor/Components/Button/SoftflareButton.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Button/SoftflareButton.razor.rz.scp.css */
 button[b-655t7hnyae] {
     background: var(--sf-color-main);
     border: solid 2px var(--sf-color-main--lighter-20);
@@ -17,9 +17,9 @@ button[b-655t7hnyae] {
         background: var(--sf-color-main--hover);
         border-color: var(--sf-color-main--darker-30);
     }
-/* /Fiddles/_content/SoftFlare.Blazor/Components/Button/SoftflareToggleThemeButton.razor.rz.scp.css */
-/* /Fiddles/_content/SoftFlare.Blazor/Components/Icon/SoftflareMaterialIcon.razor.rz.scp.css */
-/* /Fiddles/_content/SoftFlare.Blazor/Components/Layout/Page.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Button/SoftflareToggleThemeButton.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Icon/SoftflareMaterialIcon.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Layout/Page.razor.rz.scp.css */
 .page[b-smitl2fb5p] {
     margin: 1rem;
     height: 100dvh;
@@ -39,7 +39,7 @@ button[b-655t7hnyae] {
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     }
 }
-/* /Fiddles/_content/SoftFlare.Blazor/Components/Modal/SoftflareModal.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Modal/SoftflareModal.razor.rz.scp.css */
 .sf-modal-backdrop[b-fq2u5dapmc] {
     width: 100%;
     height: 100%;
@@ -103,7 +103,7 @@ button[b-655t7hnyae] {
     justify-content: end;
     gap: 1rem;
 }
-/* /Fiddles/_content/SoftFlare.Blazor/Components/Navbar/SoftflareNavbar.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Navbar/SoftflareNavbar.razor.rz.scp.css */
 .sf-navbar[b-rngf38kaap] {
     border-right: var(--sf-border-dark);
     background: color-mix(in srgb, var(--clr-bg) 99%, white);
@@ -153,7 +153,7 @@ button[b-655t7hnyae] {
     .collapse-toggle:hover polygon {
         fill: var(--sf-color-main--darker-20);*/ /* or lighten/darken original */
     /*}*/
-/* /Fiddles/_content/SoftFlare.Blazor/Components/Navbar/SoftflareNavbarItem.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Navbar/SoftflareNavbarItem.razor.rz.scp.css */
 .sf-navbar-item[b-0g2pfktyfs]{
     list-style: none;
 }
@@ -182,8 +182,8 @@ button[b-655t7hnyae] {
 .material-symbols[b-0g2pfktyfs]{
     font-size: 30px;
 }
-/* /Fiddles/_content/SoftFlare.Blazor/Components/Navbar/SoftflareNavbarItems.razor.rz.scp.css */
-/* /Fiddles/_content/SoftFlare.Blazor/Components/Wizard/SoftflareWizard.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Navbar/SoftflareNavbarItems.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Wizard/SoftflareWizard.razor.rz.scp.css */
 .sf-wizard-steps-container[b-7akf8klybx]{
     justify-content: center;
     margin: .5rem;
@@ -245,5 +245,5 @@ button[b-655t7hnyae] {
         display: flex;
         gap: 1rem;
     }
-/* /Fiddles/_content/SoftFlare.Blazor/Components/Wizard/SoftflareWizardStep.razor.rz.scp.css */
-/* /Fiddles/_content/SoftFlare.Blazor/Components/Wizard/SoftflareWizardSteps.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Wizard/SoftflareWizardStep.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Wizard/SoftflareWizardSteps.razor.rz.scp.css */
