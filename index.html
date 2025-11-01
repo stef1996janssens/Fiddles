@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiddles</title>
-    <base href="/Fiddles/" />
+    <base href="/" id="baseHref" />
     <link rel="stylesheet" href="css/app.css" />
 
     <link rel="stylesheet" href="/Fiddles/_content/SoftFlare.Blazor/css/soft-flare.css" />
@@ -32,3 +32,15 @@
 </body>
 
 </html>
+
+
+<script>
+    // Adjust the base href automatically when hosted under a subpath (like GitHub Pages)
+    (function () {
+        const path = window.location.pathname;
+        if (path.includes('/Fiddles/')) {
+            document.getElementById('baseHref').setAttribute('href', '/Fiddles/');
+        }
+    })();
+</script>
+
