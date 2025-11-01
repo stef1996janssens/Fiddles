@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiddles</title>
-    <base href="/" id="baseHref" />
+    <base href="/" id="dynamic-base" />
     <link rel="stylesheet" href="css/app.css" />
 
-    <link rel="stylesheet" href="_content/SoftFlare.Blazor/css/soft-flare.css" />
-    <link rel="preload" href="_content/SoftFlare.Blazor/fonts/material-symbols/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/Fiddles/_content/SoftFlare.Blazor/css/soft-flare.css" />
+    <link rel="preload" href="/Fiddles/_content/SoftFlare.Blazor/fonts/material-symbols/MaterialSymbolsOutlined.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 
     <link href="Fiddles.styles.css" rel="stylesheet" />
 </head>
@@ -35,12 +35,10 @@
 
 
 <script>
-    // Adjust the base href automatically when hosted under a subpath (like GitHub Pages)
-    (function () {
-        const path = window.location.pathname;
-        if (path.includes('/Fiddles/')) {
-            document.getElementById('baseHref').setAttribute('href', '/Fiddles/');
-        }
-    })();
+    // If hosted under GitHub Pages, fix base href dynamically
+    const base = document.getElementById('dynamic-base');
+    if (location.hostname === 'stef1996janssens.github.io') {
+        base.setAttribute('href', '/Fiddles/');
+    }
 </script>
 
