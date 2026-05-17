@@ -1,9 +1,11 @@
 ﻿@page "/"
+@using Constants
 
 <PageTitle>Home</PageTitle>
 
+<h1>Home</h1>
 
-
-	<h1>Home</h1>
-	<p>Welcome to the SoftFlare Blazor Components demo application!</p>
-	<p>Use the navigation menu to explore the various components and features available in this library.</p>
+<div class="tile-grid">
+    <SoftflareTile Href="Darts" Icon="@SvgIcon.Dartsboard" Title="Darts"></SoftflareTile>
+    <SoftflareTile Href="World" MaterialIcon="@MaterialIcon.Globe" Title="3D demo"></SoftflareTile>
+</div>
