@@ -9,5 +9,3 @@ html[data-theme="light"] .main-layout {
 .main-layout {
     display: flex;
 }
-
-::deep 

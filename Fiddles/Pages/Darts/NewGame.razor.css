@@ -1,0 +1,17 @@
+﻿.grid {
+    display: flex;
+    flex-direction: column;
+    gap: .45rem;
+}
+
+::deep .sf-nav-btn {
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: bold;
+
+    border: var(--clr-secondary) 1px solid;
+
+    .sf-btn {
+        border-radius: 8px;
+    }
+}

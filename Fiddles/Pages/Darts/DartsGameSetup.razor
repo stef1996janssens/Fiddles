@@ -1,0 +1,49 @@
+﻿@page "/darts/setup"
+@using Fiddles.Extensions
+@using System.Text.Json
+
+<SoftflareNavButton Href="darts" Class="btn-primary back-btn" Icon="@MaterialIcon.ArrowLeftAlt"></SoftflareNavButton>
+<h1>@(((Enums.DartsGame)Game).GetName())</h1>
+
+<div class="setup-page">
+    <div class="setup-section">
+        <div>
+            <SoftflareCard>
+                <SoftflareCardHeader>
+                    <p>Player Details</p>
+                </SoftflareCardHeader>
+                <SoftflareCardBody>
+                    <div class="players">
+                        @foreach (var player in Players)
+                        {
+                            <div class="player">
+                                <SoftflareButton Icon="@MaterialIcon.Remove" OnClick="() => OnRemovePlayer(player)"></SoftflareButton>
+                                <p>@player.Name</p>
+                            </div>
+                        }
+
+                        @if (Players.Count < 4)
+                        {
+                            <div class="add-player">
+                                <SoftflareButton Icon="@MaterialIcon.Add" OnClick="OnAddPlayer"></SoftflareButton>
+                                <p>Add</p>
+                            </div>
+                        }
+                    </div>
+                </SoftflareCardBody>
+            </SoftflareCard>
+        </div>
+
+        <div>
+            <SoftflareCard>
+                <SoftflareCardHeader>
+                    <p>Game settings</p>
+                </SoftflareCardHeader>
+                <SoftflareCardBody>
+
+                </SoftflareCardBody>
+            </SoftflareCard>
+        </div>
+    </div>
+    <SoftflareNavButton Href="@($"darts/game?gameId={Game}&players={JsonSerializer.Serialize(Players)}")" Title="Start Game" Class="btn-primary confirm-btn"></SoftflareNavButton>
+</div>

@@ -1,0 +1,67 @@
+﻿::deep .sf-card {
+    width: 100% !important;
+    min-height: 100px;
+
+    .sf-card-header {
+        text-transform: uppercase;
+        font-size: .95rem;
+        background: var(--background-gradient);
+    }
+}
+
+.setup-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 60px);
+
+    .setup-section {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
+
+.players {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: var(--sf-border-radius);
+    padding: 1rem;
+    
+    width: 100%;
+
+    .player {
+        place-items: center;
+        font-size: .8rem;
+
+        .sf-btn {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            margin-bottom: .5rem;
+        }
+    }
+
+    .add-player {
+        .sf-btn {
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+.confirm-btn {
+    width: 100%;
+}
+
+::deep .confirm-btn.sf-btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    background: var(--background-gradient);
+}

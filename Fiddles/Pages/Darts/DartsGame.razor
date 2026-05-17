@@ -1,0 +1,12 @@
+﻿@page "/darts/game"
+@using Fiddles.Extensions
+
+<SoftflareNavButton Href="darts" Class="btn-primary back-btn" Icon="@MaterialIcon.ArrowLeftAlt"></SoftflareNavButton>
+<h1>@(((Enums.DartsGame)Game).GetName())</h1>
+
+@foreach (var player in _players)
+{
+    <div class="player">
+        <p>@player.Name</p>
+    </div>
+}

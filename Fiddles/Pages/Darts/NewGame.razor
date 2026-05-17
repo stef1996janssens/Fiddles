@@ -1,0 +1,15 @@
+﻿@page "/darts"
+
+<SoftflareNavButton Href="home" Class="btn-primary back-btn" Icon="@MaterialIcon.ArrowLeftAlt"></SoftflareNavButton>
+
+<h1>New Game</h1>
+
+<div class="grid"> 
+    <SoftflareNavButton Href="@($"darts/setup?game={(int)Enums.DartsGame.Match}")" Class="btn-primary" Title="Match" Icon="@MaterialIcon.TrendingFlat" IconPosition="IconPosition.Right"></SoftflareNavButton>
+    <SoftflareNavButton Href="@($"darts/setup?game={(int)Enums.DartsGame.AroundTheClock}")" Class="btn-primary" Title="Around the clock" Icon="@MaterialIcon.TrendingFlat" IconPosition="IconPosition.Right"></SoftflareNavButton>
+    <SoftflareNavButton Href="@($"darts/setup?game={(int)Enums.DartsGame.Shangai}")" Class="btn-primary" Title="Shangai" Icon="@MaterialIcon.TrendingFlat" IconPosition="IconPosition.Right"></SoftflareNavButton>
+    <SoftflareNavButton Href="@($"darts/setup?game={(int)Enums.DartsGame.ScoreTraining}")" Class="btn-primary" Title="Score training" Icon="@MaterialIcon.TrendingFlat" IconPosition="IconPosition.Right"></SoftflareNavButton>
+    <SoftflareNavButton Href="@($"darts/setup?game={(int)Enums.DartsGame.SinglesTraining}")" Class="btn-primary" Title="Singles training" Icon="@MaterialIcon.TrendingFlat" IconPosition="IconPosition.Right"></SoftflareNavButton>
+    <SoftflareNavButton Href="@($"darts/setup?game={(int)Enums.DartsGame.DoublesTraining}")" Class="btn-primary" Title="Doubles training" Icon="@MaterialIcon.TrendingFlat" IconPosition="IconPosition.Right"></SoftflareNavButton>
+    <SoftflareNavButton Href="@($"darts/setup?game={(int)Enums.DartsGame.Cricket}")" Class="btn-primary" Title="Cricket" Icon="@MaterialIcon.TrendingFlat" IconPosition="IconPosition.Right"></SoftflareNavButton>
+</div>
