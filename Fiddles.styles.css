@@ -1,4 +1,4 @@
-@import '_content/SoftFlare.Blazor/SoftFlare.Blazor.go8wk32pzo.bundle.scp.css';
+@import '_content/SoftFlare.Blazor/SoftFlare.Blazor.x016yxpw3q.bundle.scp.css';
 
 /* /Layout/MainLayout.razor.rz.scp.css */
 html[data-theme="dark"] .main-layout[b-ihw3j2quo3] {
@@ -12,9 +12,26 @@ html[data-theme="light"] .main-layout[b-ihw3j2quo3] {
 .main-layout[b-ihw3j2quo3] {
     display: flex;
 }
-
-[b-ihw3j2quo3] 
 /* /Pages/ColorPalette.razor.rz.scp.css */
+/* /Pages/Darts/DartsGame.razor.rz.scp.css */
+/* /Pages/Darts/NewGame.razor.rz.scp.css */
+.grid[b-qvseugwot8] {
+    display: flex;
+    flex-direction: column;
+    gap: .45rem;
+}
+
+[b-qvseugwot8] .sf-nav-btn {
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: bold;
+
+    border: var(--clr-secondary) 1px solid;
+
+    .sf-btn {
+        border-radius: 8px;
+    }
+}
 /* /Pages/Home.razor.rz.scp.css */
 h1[b-31cuo7q7ym] {
     margin-bottom: 1rem;

@@ -144,14 +144,34 @@ body {
     border-radius: 10px;
     top: 1.5rem;
     right: 1.5rem;
-    background: var(--clr-background);
+    background: var(--background-gradient--darker);
+}
+
+.sf-nav-btn .sf-btn.back-btn {
+    position: absolute;
+    width: 40px !important;
+    z-index: 10;
+    border-radius: 10px;
+    background: var(--background-gradient--darker);
 }
 
 .tile {
     background: var(--background-gradient--darker);
 }
 
+h1 {
+    text-transform: uppercase;
+    margin: 1rem 0;
+    place-self: center;
+}
+
 @media (max-width : 768px) {
+
+    h1{
+        font-size: 1.2rem;
+
+    }
+
     .sf-btn.theme-btn {
         top: 1rem;
         right: 1rem;

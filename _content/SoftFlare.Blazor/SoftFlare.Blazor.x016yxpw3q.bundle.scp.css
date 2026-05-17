@@ -7,6 +7,8 @@ button[b-655t7hnyae] {
     padding: .25rem .5rem;
     white-space: nowrap;
     display: flex;
+    justify-content: center;
+    align-items:center;
     gap: .5rem;
     height: 40px;
     color: var(--sf-color-text-primary);
@@ -17,7 +19,23 @@ button[b-655t7hnyae] {
         background: var(--sf-color-main--hover);
         border-color: var(--sf-color-main--darker-30);
     }
+
+button.inverse[b-655t7hnyae]{
+    flex-direction: row-reverse;
+}
 /* _content/SoftFlare.Blazor/Components/Button/SoftflareFullscreenButon.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Button/SoftflareNavButton.razor.rz.scp.css */
+.sf-nav-btn[b-vxwcp3myeo] {
+    background: white;
+    border-radius: var(--sf-border-radius);
+
+    .sf-btn {
+        width: 100%;
+        justify-content: space-between;
+        text-transform: inherit;
+        font-weight: inherit;
+    }
+}
 /* _content/SoftFlare.Blazor/Components/Button/SoftflareToggleThemeButton.razor.rz.scp.css */
 /* _content/SoftFlare.Blazor/Components/Card/SoftflareCard.razor.rz.scp.css */
 .sf-card[b-3m26o74juc] {
@@ -72,7 +90,7 @@ button[b-655t7hnyae] {
         --page-margin: .5rem;
 
         .main {
-            --main-padding: .5rem;
+            --main-padding: .5rem !important;
         }
     }
 }

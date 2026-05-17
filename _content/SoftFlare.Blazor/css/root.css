@@ -53,3 +53,8 @@ html {
     gap: 1rem;
     align-items: center;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
