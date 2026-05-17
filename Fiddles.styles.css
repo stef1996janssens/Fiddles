@@ -1,4 +1,4 @@
-@import '_content/SoftFlare.Blazor/SoftFlare.Blazor.x016yxpw3q.bundle.scp.css';
+@import '_content/SoftFlare.Blazor/SoftFlare.Blazor.m4vynnqqfv.bundle.scp.css';
 
 /* /Layout/MainLayout.razor.rz.scp.css */
 html[data-theme="dark"] .main-layout[b-ihw3j2quo3] {
@@ -14,6 +14,74 @@ html[data-theme="light"] .main-layout[b-ihw3j2quo3] {
 }
 /* /Pages/ColorPalette.razor.rz.scp.css */
 /* /Pages/Darts/DartsGame.razor.rz.scp.css */
+/* /Pages/Darts/DartsGameSetup.razor.rz.scp.css */
+[b-antti2ai05] .sf-card {
+    width: 100% !important;
+    min-height: 100px;
+
+    .sf-card-header {
+        text-transform: uppercase;
+        font-size: .95rem;
+        background: var(--background-gradient);
+    }
+}
+
+.setup-page[b-antti2ai05] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 60px);
+
+    .setup-section {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
+
+.players[b-antti2ai05] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: var(--sf-border-radius);
+    padding: 1rem;
+    
+    width: 100%;
+
+    .player {
+        place-items: center;
+        font-size: .8rem;
+
+        .sf-btn {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            margin-bottom: .5rem;
+        }
+    }
+
+    .add-player[b-antti2ai05] {
+        .sf-btn {
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+.confirm-btn[b-antti2ai05] {
+    width: 100%;
+}
+
+[b-antti2ai05] .confirm-btn.sf-btn {
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    background: var(--background-gradient);
+}
 /* /Pages/Darts/NewGame.razor.rz.scp.css */
 .grid[b-qvseugwot8] {
     display: flex;

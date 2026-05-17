@@ -55,7 +55,8 @@ button.inverse[b-655t7hnyae]{
 /* _content/SoftFlare.Blazor/Components/Card/SoftflareCardHeader.razor.rz.scp.css */
 .sf-card-header[b-mrtj0s6vp3] {
     border-bottom: var(--sf-border);
-    width: fit-content;
+    width: inherit;
+    padding: .5rem;
 }
 /* _content/SoftFlare.Blazor/Components/Card/SoftflareTile.razor.rz.scp.css */
 /* _content/SoftFlare.Blazor/Components/Icon/SoftflareMaterialIcon.razor.rz.scp.css */
