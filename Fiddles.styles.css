@@ -1,4 +1,4 @@
-@import '_content/SoftFlare.Blazor/SoftFlare.Blazor.o7a2uhi7uc.bundle.scp.css';
+@import '_content/SoftFlare.Blazor/SoftFlare.Blazor.go8wk32pzo.bundle.scp.css';
 
 /* /Layout/MainLayout.razor.rz.scp.css */
 html[data-theme="dark"] .main-layout[b-ihw3j2quo3] {
@@ -15,6 +15,16 @@ html[data-theme="light"] .main-layout[b-ihw3j2quo3] {
 
 [b-ihw3j2quo3] 
 /* /Pages/ColorPalette.razor.rz.scp.css */
+/* /Pages/Home.razor.rz.scp.css */
+h1[b-31cuo7q7ym] {
+    margin-bottom: 1rem;
+}
+
+.tile-grid[b-31cuo7q7ym] {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 /* /Pages/World.razor.rz.scp.css */
 canvas[b-2zj7ki01o3] {
     width: 100%;

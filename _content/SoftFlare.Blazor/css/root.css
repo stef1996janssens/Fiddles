@@ -41,6 +41,7 @@
     --sf-color-dark--darker-90: color-mix(in srgb, var(--sf-color-dark), black 90%);
     --sf-border-dark: solid 1px var(--sf-color-dark--lighter-10);
     --sf-border-radius: 5px;
+    --sf-border: 1px solid rgba(255, 255, 255, 0.28);
 }
 
 html {

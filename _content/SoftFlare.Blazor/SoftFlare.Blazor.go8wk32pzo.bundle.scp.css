@@ -17,26 +17,63 @@ button[b-655t7hnyae] {
         background: var(--sf-color-main--hover);
         border-color: var(--sf-color-main--darker-30);
     }
+/* _content/SoftFlare.Blazor/Components/Button/SoftflareFullscreenButon.razor.rz.scp.css */
 /* _content/SoftFlare.Blazor/Components/Button/SoftflareToggleThemeButton.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Card/SoftflareCard.razor.rz.scp.css */
+.sf-card[b-3m26o74juc] {
+    border: var(--sf-border);
+    border-radius: var(--sf-border-radius);
+    width: fit-content;
+
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+/* _content/SoftFlare.Blazor/Components/Card/SoftflareCardBody.razor.rz.scp.css */
+.sf-card-body[b-64yk66th99]{
+    padding: .5rem;
+}
+/* _content/SoftFlare.Blazor/Components/Card/SoftflareCardHeader.razor.rz.scp.css */
+.sf-card-header[b-mrtj0s6vp3] {
+    border-bottom: var(--sf-border);
+    width: fit-content;
+}
+/* _content/SoftFlare.Blazor/Components/Card/SoftflareTile.razor.rz.scp.css */
 /* _content/SoftFlare.Blazor/Components/Icon/SoftflareMaterialIcon.razor.rz.scp.css */
+/* _content/SoftFlare.Blazor/Components/Icon/SoftflareSvgIcon.razor.rz.scp.css */
 /* _content/SoftFlare.Blazor/Components/Layout/Page.razor.rz.scp.css */
 .page[b-smitl2fb5p] {
-    margin: 1rem;
+    --page-margin: 1rem;
+
+    margin: var(--page-margin);
     height: 100dvh;
     flex: 1;
 
     .header {
-               height: 60px;
-           }
+        height: 60px;
+    }
 
     .main[b-smitl2fb5p] {
+        --main-padding: 1rem;
+
         border: 1px solid rgba(255, 255, 255, 0.28);
-        padding: 1rem;
+        padding: var(--main-padding);
         backdrop-filter: blur(5px);
-        height: calc(100% - 2rem);
+        height: calc(100% - var(--page-margin) * 2);
         background: rgba(255, 255, 255, 0.08);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .page[b-smitl2fb5p] {
+        --page-margin: .5rem;
+
+        .main {
+            --main-padding: .5rem;
+        }
     }
 }
 /* _content/SoftFlare.Blazor/Components/Modal/SoftflareModal.razor.rz.scp.css */
@@ -128,31 +165,11 @@ button[b-655t7hnyae] {
     padding: 12.5px;
 }
 
-
-/*.collapse-toggle {
-    position: absolute;
-    z-index: 99;
-    left: 100%;
-    height: 150px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.collapse-toggle .shape {
-    display: block;
-    width: 16px;
-    height: auto;
-}
-
-    .collapse-toggle .shape polygon {
-        fill: var(--sf-color-main--lighter-10);
+/*@media (max-width : 768px){
+    .sf-navbar{
+        display: none;
     }
-
-
-    .collapse-toggle:hover polygon {
-        fill: var(--sf-color-main--darker-20);*/ /* or lighten/darken original */
-    /*}*/
+}*/
 /* _content/SoftFlare.Blazor/Components/Navbar/SoftflareNavbarItem.razor.rz.scp.css */
 .sf-navbar-item[b-0g2pfktyfs]{
     list-style: none;

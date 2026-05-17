@@ -86,7 +86,13 @@ code {
     --clr-text-primary: #1a1a1a;
     --clr-text-secondary: #4a4a4a;
     --clr-highlight: #0077b6;
-    --background-gradient: linear-gradient(180deg, #e6e0ff 0%, #c9d4ff 50%, #b0d2ff 100%);
+
+    /* Define stops separately */
+    --clr-bg-stop-1: #e6e0ff;
+    --clr-bg-stop-2: #c9d4ff;
+    --clr-bg-stop-3: #b0d2ff;
+    --background-gradient: linear-gradient(180deg, var(--clr-bg-stop-1) 0%, var(--clr-bg-stop-2) 50%, var(--clr-bg-stop-3) 100% );
+    --background-gradient--darker: linear-gradient(180deg, oklch(from var(--clr-bg-stop-1) calc(l - 0.08) c h) 0%, oklch(from var(--clr-bg-stop-2) calc(l - 0.08) c h) 50%, oklch(from var(--clr-bg-stop-3) calc(l - 0.08) c h) 100% );
     /*Overwrite Softflare root css*/
 
     --sf-color-text-primary: var(--clr-text-primary);
@@ -102,8 +108,12 @@ code {
     --clr-text-primary: #ffffff;
     --clr-text-secondary: #ffffff;
     --clr-highlight: 5ccaf8;
-    --background-gradient: linear-gradient(180deg, #12151b 0%, #1a2433 50%, #1e2a3c 100%);
-
+    /* Define stops separately */
+    --clr-bg-stop-1: #12151b;
+    --clr-bg-stop-2: #1a2433;
+    --clr-bg-stop-3: #1e2a3c;
+    --background-gradient: linear-gradient(180deg, var(--clr-bg-stop-1) 0%, var(--clr-bg-stop-2) 50%, var(--clr-bg-stop-3) 100% );
+    --background-gradient--darker: linear-gradient(180deg, oklch(from var(--clr-bg-stop-1) calc(l - 0.001) c h) 0%, oklch(from var(--clr-bg-stop-2) calc(l - 0.001) c h) 50%, oklch(from var(--clr-bg-stop-3) calc(l - 0.001) c h) 100% );
     /*Overwrite Softflare root css*/
     --sf-color-text-primary: var(--clr-text-primary);
     --sf-color-main: var(--clr-surface);
@@ -137,6 +147,17 @@ body {
     background: var(--clr-background);
 }
 
-.content {
+.tile {
+    background: var(--background-gradient--darker);
 }
 
+@media (max-width : 768px) {
+    .sf-btn.theme-btn {
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .sf-navbar {
+        display: none;
+    }
+}

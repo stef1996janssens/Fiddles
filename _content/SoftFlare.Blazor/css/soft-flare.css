@@ -1,2 +1,31 @@
 ﻿@import 'root.css';
 @import 'material-symbols.css';
+
+.sf-card.tile {
+    width: 500px !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: .5rem 0;
+
+    .sf-card-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .icon {
+            margin-bottom: 10px;
+        }
+
+        .material-symbols {
+            margin-bottom: 14px;
+            font-size: 64px;
+        }
+    }
+}
+
+@media (max-width : 768px) {
+    .sf-card.tile {
+        width: 100% !important;
+    }
+}
